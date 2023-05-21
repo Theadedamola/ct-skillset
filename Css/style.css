@@ -1,0 +1,736 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}
+
+.hero{
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 810px;
+    padding: 20px 20% 0 20%;
+}
+
+.nav-logo{
+    width: 6%;
+    height: 6%;
+}
+ul{
+    float: right;
+}
+li{
+    display: inline-block;
+    margin: 12px 0;
+    border-bottom: 1px solid white;
+}
+
+a{
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.history-link {
+    margin-right: 52px;
+}
+#check {
+    display: none;
+}
+#check2 {
+    display: none;
+}
+.checkbtn {
+    float: right;
+    line-height: 55px;
+    margin-right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.sticky-nav-div {
+    background-color: white;
+    padding: 20px 20% 20px 20%;
+    position: sticky;
+    top: 0;
+    z-index: 997;
+}
+.sticky-nav{
+    margin: 0;
+}
+.sticky-nav .nav-logo{
+    width: 18.4%;
+    height: 18.4%;
+}
+.sticky-nav a {
+    color: #414f6b;
+}
+.sticky-nav li {
+    border-bottom: 1px solid #414f6b;
+}
+
+
+div#history{
+    background-image: url(../images/history-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 710px;
+    padding: 10px 20% 0 20%;
+    position: relative;
+}
+#history h1{
+    font-size: 135pt;
+    color: #414f6b91;
+}
+#history h3{
+    font-size: 32pt;
+    position: absolute;
+    top: 18%;
+    left: 32.5%;
+    color: #414f6b;
+}
+#history p{
+    margin-left: 80px;
+}
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+.carousel-div{
+    background-image: url(../images/carousel-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 236px;
+    padding: 20px 20% 0 20%;
+    overflow: hidden;
+}
+.carousel-img img{
+    width: 235px;
+    height: 180px;
+    margin-left: 12px;
+    transition: all 0.9 ease;
+}
+.image{
+    transition: all 0.9 ease;
+}
+.carousels{
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+}
+.carousel-img{
+    transition: all 0.9 ease;
+    display: flex;
+}
+.circle-div{
+    text-align: center;
+}
+.circle{
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    display: inline-flex;
+}
+.circle-2, .circle-3{
+    background-color: rgba(255, 255, 255, 0.248);
+}
+
+.climb-div {
+    position: relative;
+    padding: 0 20% 0 20%;
+    display: flex;
+}
+.climb{
+    position: relative;
+}
+.climb h1{
+    font-size: 135pt;
+    color: #414f6b91;
+    margin: 0;
+}
+.climb h3{
+    font-size: 32pt;
+    position: absolute;
+    top: 45%;
+    left: 83.6%;
+    color: #414f6b;
+}
+.climb-div p {
+    margin: 120px 0 0 100px;
+    font-size: 14px;
+}
+
+.tabs {
+    background-color: #414f6b;
+    height: 40px;
+    padding: 0 20% 0 20%;
+    display: flex;
+}
+.accordion{
+    display: none;
+}
+.tab-4, .tab-1{
+    background-color: #b0b4be;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #414f6b;
+    padding: 6px 10px;
+}
+.tab-2 {
+    color: #b0b4be;
+    font-size: 18px;
+    padding: 6px 14px;
+}
+
+.tabs p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+.tab-1-details {
+    background-image: url(../images/acc-bg.png);
+}
+.tab-2-details {
+    background-image: url(../images/acc-bg-2.png);
+    display: none;
+}
+.tab-1-details, .tab-2-details{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 752px;
+    padding: 10% 20% 0 20%;
+}
+.schedule {
+    width: 352px;
+    height: 269px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+}
+.schedule h3{
+    font-size: 28px;
+    color: #414f6b;
+}
+.schedule-list{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+}
+.schedule-list p {
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #414f6b;
+    padding: 20px 20% 20px 20%;
+}
+footer .footer-logo {
+    width: 18.4%;
+    height: 18.4%;
+}
+ul p {
+    margin: 12px 0;
+    color: #63769d;
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 1020px) and (max-width: 1439px) {
+    .hero{
+        padding: 20px 15% 0 15%;
+    }
+    .sticky-nav-div{
+        padding: 10px 15% 10px 15%;
+    }
+    div#history{
+        padding: 0px 15% 0 15%;
+        height: 500px;
+    }
+    .carousel-div{
+        padding: 10px 15% 0 15%;
+        height: 176px;
+    }
+    .carousel-img img {
+        width: 190px;
+        height: 136px;
+    }
+    #history h3{
+        top: 25%;
+        left: 32.5%;
+    }
+    .sticky-nav li{
+        margin-top: 0;
+    }
+    .climb-div{
+        padding: 0px 15% 0 15%;
+    }
+    .tabs {
+        padding: 0 15% 0 15%;
+    }
+    .tab-1-details{
+        padding: 10% 15% 0 15%;
+    }
+    .tab-2-details{
+        padding: 10% 15% 0 15%;
+    }
+    .tab-1-details, .tab-2-details{
+        background-size: cover;
+        height: 612px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1019px) {
+    .hero{
+        height: 610px;
+        padding: 20px 10% 0 10%;
+    }
+    nav ul {
+        background-color: hsl(0, 0%, 100%);
+        margin: 20px 154px 0 30px;
+        padding: 30px 0;
+        text-align: center;
+        width: 63%;
+        position: fixed;
+        right: 1000px;
+        transition: all .5s;
+        z-index: 998;
+    }
+    .checkbtn{
+        display: block;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    nav ul li{
+        display: block;
+        border-bottom: 1px solid #414f6b;
+        width: 20%;
+        margin: auto;
+    }
+    nav ul li a {
+        color: #414f6b;
+    }
+    .history-link{
+        margin: 12px auto;
+    }
+
+    .sticky-nav-div{
+        padding: 10px 10% 10px 10%;
+    }
+
+    .sticky-nav > .sticky-list {
+        background-color: hsl(0, 0%, 100%);
+        margin: 0px 0px 0 30px;
+        padding: 30px 0;
+        text-align: center;
+        width: 104%;
+        position: relative;
+        right: 1000px;
+        transition: all .5s;
+        z-index: 999;
+    }
+    #check2:checked ~ .sticky-nav > .sticky-list{
+        right: 0;
+    }
+
+    div#history {
+        padding: 20px 10% 0 10%;
+        height: 600px;
+    }
+
+    #history h1{
+        font-size: 100px;
+        line-height: 40px;
+        position: absolute;
+        top: 10%;
+    }
+    #history h3{
+        top: 8%;
+        left: 23%;
+    }
+
+    .carousel-div{
+        padding: 20px 10% 0 10%;
+        height: 236px;
+    }
+
+    .carousel-img img{
+        width: 225px;
+        height: 180px;
+    }
+    .carousels{
+        width: 650px;
+    }
+
+    .climb-div{
+        padding: 30px 10%;
+    }
+    .climb h1{
+        font-size: 100px;
+    }
+    .climb h3{
+        top: 28%;
+    }
+    .climb-div p{
+        margin-top: 60px;
+        margin-right: 100px;
+    }
+
+    .tabs{
+        padding: 0px 10% 0 10%;
+        display: none;
+    }
+    .tab-1-details, .tab-2-details {
+        padding: 10% 10% 0 10%;
+        height: 512px;
+    }
+    .tab-2-details{
+        display: none;
+    }
+    .accordion{
+        display: block;
+    }
+    .accordion-1, .accordion-2 {
+        background-color: #414f6b;
+        height: 60px;
+        padding: 0 10% 0 10%;
+    }
+    .mountain-1, .mountain-2{    
+        color: #b0b4be;
+        font-size: 18px;
+        padding: 16px 0px;
+    }
+    .icon{
+        float: right;
+        margin-top: -24px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .hero{
+        height: 610px;
+        padding: 20px 8% 0 8%;
+        height: 500px;
+    }
+    .nav-logo{
+        width: 10%;
+        height: 10%;
+    }
+    nav ul {
+        background-color: hsl(0, 0%, 100%);
+        margin: 20px 34px 0 30px;
+        padding: 30px 0;
+        text-align: center;
+        width: 88%;
+        position: fixed;
+        right: 1000px;
+        transition: all .5s;
+        z-index: 998;
+    }
+
+    .checkbtn{
+        display: block;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    nav ul li{
+        display: block;
+        border-bottom: 1px solid #414f6b;
+        width: 35%;
+        margin: auto;
+    }
+    nav ul li a {
+        color: #414f6b;
+    }
+    .history-link{
+        margin: 12px auto;
+    }
+
+    .sticky-nav-div{
+        padding: 10px 8% 10px 8%;
+    }
+    .sticky-nav .nav-logo{
+        width: 28.4%;
+        height: 18.4%;
+    }
+    .sticky-nav > .sticky-list {
+        background-color: hsl(0, 0%, 100%);
+        margin: 0px 0px 0 30px;
+        padding: 30px 0;
+        text-align: center;
+        width: 104%;
+        position: relative;
+        right: 1000px;
+        transition: all .5s;
+        z-index: 999;
+    }
+    #check2:checked ~ .sticky-nav > .sticky-list{
+        right: 0;
+    }
+
+    div#history {
+        padding: 20px 8% 0 8%;
+        height: 650px;
+    }
+
+    #history h1{
+        font-size: 100px;
+        line-height: 40px;
+        position: absolute;
+        top: 10%;
+    }
+    #history h3{
+        top: 7%;
+        left: 32%;
+    }
+    #history p {
+        margin-left: 20px;
+        font-size: 12px;
+        position: absolute;
+        top: 25%;
+        width: 80%;
+    }
+
+    .carousel-div{
+        padding: 20px 8% 20px 8%;
+        height: 168px;
+    }
+
+    .carousel-div img{
+        width: 162px;
+        height: 120px;
+        margin-left: 8px;
+    }
+    .carousels{
+        width: 350px;
+    }
+
+    .climb-div{
+        padding: 20px 10% 0 10%;
+        display: block;
+    }
+    .climb h1{
+        font-size: 100px;
+    }
+    .climb h3{
+        top: 32%;
+        left: 33%;
+    }
+    .climb-div p{
+        margin: 20px 0 20px 20px;
+        
+    }
+
+    .tabs{
+        padding: 0px 10% 0 10%;
+        display: none;
+    }
+    .tab-1-details, .tab-2-details {
+        padding: 10% 10% 0 10%;
+        height: 512px;
+    }
+
+    .tab-2-details{
+        display: none;
+    }
+    .accordion{
+        display: block;
+    }
+    .accordion-1, .accordion-2 {
+        background-color: #414f6b;
+        height: 60px;
+        padding: 0 10% 0 10%;
+    }
+    .mountain-1, .mountain-2{    
+        color: #b0b4be;
+        font-size: 18px;
+        padding: 16px 0px;
+    }
+    .icon{
+        float: right;
+        margin-top: -24px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 8px 8% 8px 8%;
+    }
+    footer .footer-logo {
+        width: 22.4%;
+        height: 22.4%;
+    }
+    footer ul{
+        float: none;
+    }
+}
+
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .hero{
+        height: 610px;
+        padding: 20px 8% 0 8%;
+        height: 500px;
+    }
+    .nav-logo{
+        width: 10%;
+        height: 10%;
+    }
+    nav ul {
+        background-color: hsl(0, 0%, 100%);
+        margin: 20px 34px 0 30px;
+        padding: 30px 0;
+        text-align: center;
+        width: 83%;
+        position: fixed;
+        right: 1000px;
+        transition: all .5s;
+        z-index: 998;
+    }
+    .checkbtn{
+        display: block;
+        line-height: 30px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    nav ul li{
+        display: block;
+        border-bottom: 1px solid #414f6b;
+        width: 30%;
+        margin: auto;
+    }
+    nav ul li a {
+        color: #414f6b;
+    }
+    .history-link{
+        margin: 12px auto;
+    }
+
+    .sticky-nav-div{
+        padding: 10px 8% 10px 8%;
+    }
+    .sticky-nav .nav-logo{
+        width: 28.4%;
+        height: 18.4%;
+    }
+    .sticky-nav > .sticky-list {
+        background-color: hsl(0, 0%, 100%);
+        margin: 0px 0px 0 30px;
+        padding: 30px 0;
+        text-align: center;
+        width: 104%;
+        position: relative;
+        right: 1000px;
+        transition: all .5s;
+        z-index: 999;
+    }
+    #check2:checked ~ .sticky-nav > .sticky-list{
+        right: 0;
+    }
+
+    div#history {
+        padding: 20px 8% 0 8%;
+        height: 650px;
+    }
+
+    #history h1{
+        font-size: 100px;
+        line-height: 40px;
+        position: absolute;
+        top: 10%;
+    }
+    #history h3{
+        top: 9%;
+        left: 34%;
+    }
+    #history p {
+        margin-left: 20px;
+        font-size: 12px;
+        position: absolute;
+        top: 25%;
+        width: 80%;
+    }
+
+    .carousel-div{
+        padding: 20px 6% 20px 6%;
+        height: 178px;
+    }
+
+    .carousel-div img{
+        width: 162px;
+        height: 120px;
+        margin-left: 8px;
+    }
+    .carousels{
+        width: 300px;
+    }
+
+    .climb-div{
+        padding: 20px 10% 0 10%;
+        display: block;
+    }
+    .climb h1{
+        font-size: 100px;
+    }
+    .climb h3{
+        top: 30%;
+        left: 37%;
+    }
+    .climb-div p{
+        margin: 20px 0 20px 20px;
+        
+    }
+
+    .tabs{
+        padding: 0px 10% 0 10%;
+        display: none;
+    }
+    .tab-1-details, .tab-2-details {
+        padding: 10% 10% 0 10%;
+        height: 512px;
+    }
+    .schedule {
+        width: 317px;
+    }
+    .tab-2-details{
+        display: none;
+    }
+    .accordion{
+        display: block;
+    }
+    .accordion-1, .accordion-2 {
+        background-color: #414f6b;
+        height: 60px;
+        padding: 0 8% 0 8%;
+    }
+    .mountain-1, .mountain-2{    
+        color: #b0b4be;
+        font-size: 18px;
+        padding: 16px 0px;
+    }
+    .icon{
+        float: right;
+        margin-top: -24px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 8px 8% 8px 8%;
+    }
+    footer .footer-logo {
+        width: 22.4%;
+        height: 22.4%;
+    }
+    footer ul{
+        float: none;
+    }
+}
