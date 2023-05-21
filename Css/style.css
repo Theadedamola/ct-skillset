@@ -170,6 +170,7 @@ p{
     height: 40px;
     padding: 0 20% 0 20%;
     display: flex;
+    cursor: pointer;
 }
 .accordion{
     display: none;
