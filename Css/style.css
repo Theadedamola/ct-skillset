@@ -180,11 +180,13 @@ p{
     text-decoration: underline;
     color: #414f6b;
     padding: 6px 10px;
+    cursor: pointer;
 }
 .tab-2 {
     color: #b0b4be;
     font-size: 18px;
     padding: 6px 14px;
+    cursor: pointer;
 }
 
 .tabs p{
